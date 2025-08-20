@@ -105,10 +105,10 @@ const AdminDashboard = () => {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b border-border bg-card">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div className="container mx-auto px-4 py-4 flex flex-col gap-3 md:flex-row md:justify-between md:items-center">
           <h1 className="text-2xl font-bold text-foreground">Admin Dashboard</h1>
-          <div className="flex items-center space-x-4">
-            <span className="text-sm text-muted-foreground">
+          <div className="flex items-center gap-2 md:gap-4 flex-wrap md:flex-nowrap">
+            <span className="hidden md:inline text-sm text-muted-foreground max-w-[40vw] truncate">
               Welcome, {user?.email}
             </span>
             <Button variant="outline" size="sm" onClick={handleSignOut}>
