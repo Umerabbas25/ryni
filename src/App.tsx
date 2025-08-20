@@ -16,6 +16,10 @@ import CategoryPage from "./pages/CategoryPage";
 import ProductDetail from "./pages/ProductDetail";
 import AdminLogin from "./pages/AdminLogin";
 import AdminDashboard from "./pages/AdminDashboard";
+import ReturnsPolicy from "./pages/ReturnsPolicy";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import ShippingInfo from "./pages/ShippingInfo";
+import TermsOfService from "./pages/TermsOfService";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -43,6 +47,10 @@ const App = () => (
             <Route path="/product/:id" element={<ProductDetail />} />
             <Route path="/admin-login" element={<AdminLogin />} />
             <Route path="/admin" element={<AdminDashboard />} />
+            <Route path="/returns" element={<ReturnsPolicy />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/shipping" element={<ShippingInfo />} />
+            <Route path="/terms" element={<TermsOfService />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
